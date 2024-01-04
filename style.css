@@ -1,0 +1,127 @@
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.container{
+    display: flex;
+    column-gap: 20px;
+}
+.lines{
+    border-radius: 20px;
+}
+.h,.e{
+    display: flex;
+    column-gap: 2px;
+    align-items: center;
+}
+.h1,.h3,.e1,.l1,.l11{
+    width: 10px;
+    height: 160px;
+}
+.h2,.e2,.e3,.e4,.l2,.l22{
+    width: 80px;
+    height: 10px;
+}
+.e2,.e3,.e4{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    animation: e1 1s step-start infinite;
+}
+.e1{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    animation: e1 1s step-start infinite;
+}
+.ev{
+    display: flex;
+    flex-direction: column;
+    row-gap: 65px;
+    margin-left: -3px;   
+}
+.l,.lh{
+    display: flex;
+    align-items: flex-end;
+}
+.l1,.l11{
+    border-bottom-right-radius: 0px;
+}
+.l2,.l22{
+    margin-left: -1px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.o{
+    width: 130px;
+    height: 140px;
+    border: 10px solid;
+    border-radius: 50%;
+    animation: blinko 0.8s step-start infinite;
+}
+.h1,.h3{
+    animation: blinkh 1s step-start infinite;
+    background-color: rgb(218, 95, 95);
+}
+.h2{
+    animation: blinkhh 1s step-start infinite;
+}
+.l1,.l22{
+    animation: blinkl 1s step-start infinite;
+}
+.l11,.l2{
+    animation: blinkl2 1s step-start infinite;
+}
+@keyframes blinko {
+    0%,100%{
+        border-color: rgb(218, 95, 95);
+    }
+    50%,80%{
+        border-color: rgb(16, 16, 16);
+    }
+    60%{
+        border-color: rgb(218, 95, 95);
+    }
+}
+@keyframes blinkh {
+    0%,100%{
+        background-color: rgb(16, 16, 16);
+    }
+    90%{
+        background-color: rgb(234, 116, 116);
+    }
+}
+@keyframes blinkhh {
+    0%,100%{
+        background-color: rgb(234, 116, 116);
+    }
+    20%{
+        background-color: rgb(16, 16, 16);
+    }
+}
+@keyframes e1 {
+    0%,100%{
+        background-color: rgb(16, 16, 16);
+    }
+    40%{
+        background-color: rgb(234, 116, 116);
+    }
+}
+@keyframes blinkl {
+    0%,10%,100%{
+        background-color: rgb(16, 16, 16);
+    }
+    70%{
+        background-color: rgb(234, 116, 116);
+    }
+    
+}
+@keyframes blinkl2 {
+    0%,30%,100%{
+        background-color: rgb(16, 16, 16);
+    }
+    50%{
+        background-color: rgb(234, 116, 116);
+    }
+}
